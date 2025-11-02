@@ -13,7 +13,13 @@ function Studies() {
     {
       cargo: "Desarrollo de Aplicaciones Web",
       empresa: "IES Poeta Pacó Mollá",
-      tiempo: "2021-2023",
+      tiempo: "2021-2022",
+      funciones: [],
+    },
+    {
+      cargo: "Ingeneria Informatica",
+      empresa: "Universidad de Alicante",
+      tiempo: "2024-2025",
       funciones: [],
     },
   ];
