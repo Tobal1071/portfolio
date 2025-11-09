@@ -2,10 +2,11 @@ import React from "react";
 import Section from "../Section";
 import ProjectCard from "@/components/ProjectCard";
 import RoundedTag from "@/components/RoundedTag";
-import { SiLaravel, SiMongodb, SiMysql, SiNodedotjs, SiReact, SiWordpress } from "react-icons/si";
+import { SiLaravel, SiMongodb, SiMysql, SiNodedotjs, SiReact, SiRender, SiWordpress } from "react-icons/si";
 import Image from "next/image";
 import imgSerode from "/public/just_drink.svg";
-import imgRamblas from "/public/ramblas.svg";
+import imgRamblas from "/public/ulises.svg";
+import { link } from "fs";
 
 function Projects() {
   const projects = [
@@ -40,6 +41,25 @@ function Projects() {
       ),
       
     },
+    {
+      title: "Team Ulises",
+      description: "Pagina web de club de boxeo",
+      icons: (
+        <>
+          <RoundedTag icon={<SiReact />} />
+          <RoundedTag icon={<SiRender />} />
+        </>
+      ),
+      image: (
+        <Image
+          src={imgRamblas}
+          alt="Foto de Team Ulises"
+          className="max-w-72 filter sepia grayscale"
+        />
+      ),
+      link: "https://team-ulises.com",
+      
+    },
   ];
   return (
     <Section title="Proyectos">
@@ -51,7 +71,7 @@ function Projects() {
               description={project.description}
               icons={project.icons}
               image={project.image}
-              
+              link={project.link}
               key={index}
             />
           );
