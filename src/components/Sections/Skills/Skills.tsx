@@ -21,6 +21,7 @@ function Skills() {
         <Tag text="Bootstrap" className="dark:bg-l_aqua bg-d_aqua" />
         <Tag text="Java" className="dark:bg-l_orange bg-d_orange" />
         <Tag text="JavaScript" className="dark:bg-l_yellow bg-d_yellow" />
+        <Tag text="Spring Boot" className="dark:bg-l_blue bg-d_blue" />
       </div>
     </Section>
   );
